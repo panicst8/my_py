@@ -24,6 +24,6 @@ def test_sample_func_subtract():
 def test_hypothesis_test_of_calc(first_int, second_int):
     """ hypothesis test """
     sample_class = SampleClass()
-    assert (
+    assert (  # nosec
         sample_class.sample_method_add(first_int, second_int) == first_int + second_int
-    )  # nosec
+    )
