@@ -1,10 +1,12 @@
 """ Sample tests using pytest and hypothesis """
-from hypothesis import given
+import sys
 import hypothesis.strategies as st
+from hypothesis import given
+
+sys.path.append("..")
 
 
-from my_py.my_py import SampleClass
-from my_py.my_py import sample_func_subtract
+from my_py.my_py import SampleClass, sample_func_subtract  # noqa: E402
 
 
 def test_sample_method_add():
